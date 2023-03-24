@@ -1,0 +1,292 @@
+// main page
+    
+.main
+    background: url(../img/mainBg.jpg) no-repeat center
+    background-color: #133444
+    background-size: cover
+    .sub-title
+        font-size: 24rem
+        color: $colorAccent
+        font-weight: 600
+
+.main-container
+    align-items: center
+    justify-content: space-between
+    padding: 117rem 0
+    flex-direction: column
+    gap: 100rem
+    +media(768)
+        flex-direction: row
+.main-content
+    text-align: center
+    +media(768)
+        text-align: left
+.main-content__title
+    padding: 15rem 0 
+    font-size: 60rem
+    letter-spacing: 2rem
+    color: #f8f9f4
+    font-weight: 700
+    +media(768)
+        padding: 45rem 0 38rem
+
+.main-content__description
+    font-size: 24rem
+    color: #f8f9f4
+
+.main-form
+    max-width: 650rem
+    padding: 30rem
+    border-radius: 5rem
+    background-color: $colorFormBG
+.label, .input, .textarea
+    width: 100%
+    font-family: 'Open Sans', sans-serif
+    color: $colorInputText
+    font-size: 16rem
+    
+.main-form__title
+    padding-bottom: 15rem
+    border-bottom: 2px solid $colorAccent
+    text-align: center
+    font-size: 20rem
+    color: $colorMainText
+    font-weight: 700
+form
+    padding-top: 20rem
+.send-button
+    width: 100%
+    cursor: pointer
+
+.input,
+.textarea
+    background-color: #fff
+    margin-bottom: 18rem
+    padding: 10.5rem 17rem
+    font-weight: 300
+    outline: none
+    border: 1px solid transparent
+    &:active
+        outline: none
+    &:focus
+        outline: none
+    &:focus-visible
+        border: 1px solid $colorAccent
+.textarea
+    resize: vertical
+    min-height: 150px
+    max-height: 200px
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+    transition: all 5000s ease-in-out 0s
+
+// about
+.about-container
+    padding: 50rem 0 
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+    gap: 50rem
+    +media(500)
+        padding: 100rem 0 50rem
+        flex-direction: row
+.about-merits,
+.about-content
+    width: 100%
+    +media(500)
+        width: 49%
+
+.merits-item
+    position: relative
+    padding-left: 62rem
+    margin-bottom: 45rem
+    font-size: 20rem
+    font-weight: 700
+    &::before
+        content: ''
+        top: 50%
+        transform: translateY(-50%)
+        position: absolute
+        width: 52rem
+        height: 52rem
+        background: url(../img/aboutArrow.png) no-repeat 
+        background-size: contain
+        background-color: $colorAccent
+        border-radius: 50%
+        left: 0
+.about-content
+    text-align: left
+    order: -1
+    +media(500)
+        order: 0
+        text-align: right
+
+.about-content__title
+    padding-bottom: 25rem
+.about-content__description
+    padding-bottom: 30rem
+    font-size: 18rem
+    text-align: left
+
+// clients
+.clients-container 
+    padding: 50rem 0
+    gap: 50rem
+    justify-content: space-between
+    flex-direction: column
+    +media(500)
+        padding: 50rem 0 100rem
+        flex-direction: row
+.clients-content__description
+    padding: 25rem 0
+    font-size: 18rem
+.clients-content,
+.clients-companies
+    width: 100%
+    +media(500)
+        width: 49%
+.clients-content
+    text-align: center
+    +media(500)
+        text-align: left
+.clients-content__description
+    text-align: left
+.clients-companies
+    flex-wrap: wrap
+    align-content: center
+    justify-content: center
+    column-gap: 50rem
+    row-gap: 25rem
+    +media(500)
+        justify-content: flex-end
+.company-item
+    width: 40%
+    display: flex
+    align-items: center
+    justify-content: center
+    +media(960)
+        width: auto
+
+// feedback
+.feedback
+    padding: 62rem 0
+    background: url(../img/feedbackBg.jpg) no-repeat center
+    background-color: #133444
+    background-size: cover
+    text-align: center
+.feedback-title
+    padding-bottom: 30rem
+    font-size: 48rem
+    line-height: 60rem
+    color: #f8f9f4
+    font-weight: 700
+
+// services
+.services
+    padding: 50rem 0
+    text-align: center
+.services-container
+    background-color: #f3f3f3
+    padding: 50rem 0
+.services-description
+    padding: 20rem 0 45rem
+    font-size: 18rem
+.services-items
+    margin-bottom: 30rem
+    gap: 20rem
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    align-items: stretch
+.services-item
+    width: 80%
+    padding: 30rem 20rem
+    background: #fff
+    text-align: left
+    border-radius: 5rem
+    transition: $transition
+    cursor: pointer
+    &:hover
+        box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.15)
+    +media(522)
+        max-width: 400rem
+.item-title 
+    position: relative
+    padding-bottom: 15rem
+    font-size: 20rem
+    font-weight: 700
+    &::before
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 0
+        height: 2px
+        width: 80%
+        background-color: $colorAccent
+.item-description
+    padding-top: 20rem
+    font-weight: 300
+
+// pricing
+.pricing
+    background: url(../img/pricingBg.jpg) no-repeat center
+    background-color: #133444
+    background-size: cover
+    text-align: center
+.pricing-container
+    padding: 50rem 0
+.pricing-title
+    margin-bottom: 40rem
+    color: #fff
+.pricing-description
+    gap: 40rem
+    align-items: stretch
+    flex-direction: column
+    +media(620)
+        flex-direction: row
+.pricing-item
+    padding: 40rem 60rem
+    background: #fff
+    border-radius: 5rem
+    img
+        margin-bottom: 40rem
+        width: 150rem
+.pricing-item__title
+    margin-bottom: 40rem
+    min-height: 66rem
+    font-size: 24rem
+    font-weight: 700
+.pricing-item__description
+    margin-bottom: 35rem
+    font-weight: 300
+.sale
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        top: -10.4px
+        left: -12.5px
+        width: 157px
+        height: 157px
+        background: url(../img/sale.png) no-repeat
+        background-size: contain
+
+// footer
+.footer 
+    padding: 100rem 0 50rem
+.footer-container
+    justify-content: space-between
+    .logo
+        width: 145rem
+        font-size: 11rem
+        img
+            width: 37rem
+.footer-description
+    font-size: 12rem
+    font-weight: 500
+.copyright
+    font-size: 14rem
+    padding-bottom: 15rem
+    font-weight: 400

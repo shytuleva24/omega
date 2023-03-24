@@ -1,0 +1,12 @@
+-
+    let menu = [
+        {name: "main", url: "#main"},
+        {name: "about us", url: "#about"},
+        {name: "clients", url: "#clients"},
+        {name: "our services", url: "#services"},
+        {name: "contact us", url: "#contact"}
+    ]
+mixin menu (items, myClass)
+    for item in items 
+        li 
+            a(data-filter=item.filter href=item.url class=myClass) #{item.name}

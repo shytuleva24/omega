@@ -1,0 +1,72 @@
+@import components/mixin
+
+*, *:before, *:after 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+.overflow-hidden
+    overflow: hidden
+
+html
+    font-size: 0.6px
+    +media(576)
+        font-size: 0.7px
+    +media(768)
+        font-size: 0.8px
+    +media(992)
+        font-size: 0.9px
+    +media(1100)
+        font-size: 1px
+    +media(2000)
+        font-size: 1.5px
+body
+    font-family: 'Open Sans', sans-serif
+    font-size: 16rem
+    color: $colorMainText
+
+body.lock
+    overflow: hidden
+
+ul
+    list-style: none
+a
+    display: inline-block
+    text-decoration: none
+    color: $colorMainText
+
+img
+    width: 100%
+    vertical-align: bottom
+
+.wrapper
+    width: 94%
+    margin: 0 auto
+    +media(1260)
+        max-width: 1240rem
+
+.flex
+    display: flex
+
+.title
+    font-size: 36rem
+    font-weight: 600
+    color: $colorAccent
+
+.btn
+    padding: 15rem 69rem
+    background-color: $colorAccent
+    text-transform: uppercase
+    border: 2px solid $colorAccent
+    color: $colorBtnText
+    font-weight: 700
+    border-radius: 5px
+    transition: $transition
+    &:hover
+        background-color: transparent
+        color: $colorAccent
+        // box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.15)
+
+@import components/header
+@import components/main
+@import components/footer

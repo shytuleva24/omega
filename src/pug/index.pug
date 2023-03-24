@@ -1,0 +1,130 @@
+doctype html
+include components/mixin
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scelable=yes, maximum-scale=3.0, minimum-scale=1.0")
+    title Omega Data Software
+    link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="img/favicon.ico" type="image/x-icon")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet")        
+    link(rel="stylesheet", href="css/styles.css")
+body
+    .overflow-hidden
+        header#main
+            .header.lock-padding
+                .header-container.flex.wrapper
+                    .logo.flex
+                        a(href="index.html") 
+                        img(src="img/omega.svg", alt="")
+                        p Omega Data Software
+                    .flex.menu
+                        a.btn.mobile-btn(href="#popup") hire us
+                        .menu-icon
+                            span 
+                        nav.menu-body
+                            ul.menu-list.flex
+                                +menu(menu, "scroll-to menu-link")
+                    a.btn.desctop-btn(href="#popup") hire us
+        main 
+            section.main
+                .wrapper.main-container.flex 
+                    .main-content 
+                        p.sub-title Top Software Development Company
+                        h1.title.main-content__title Custom Software Development Services
+                        p.main-content__description We help enterprises create new custom software solutions, modernize legacy systems, and improve existing systems, besides integrating them with new ones.
+                    .main-form
+                        h3.main-form__title Hire the Top Software Development Professionals in Latin America
+                        form#form(action="" method='POST' autocomplete="off") 
+                            label.label(for="nameUser") 
+                                input.input#nameUser(type="text" name="nameUser" placeholder='Your Name')
+                            label.label(for="emailUser")
+                                input.input#emailUser(type="email" name="emailUser" placeholder='Your  work email') 
+                            label.label(for="phoneUser")
+                                input.input#phoneUser(type="number" name="phoneUser" placeholder='Your  phone number') 
+                            label.label(for="message")
+                                textarea.textarea#message(name="message" placeholder="What we can do for you?" )
+                            button.btn.send-button(type="submit") start your business
+            section.about#about
+                .wrapper.flex.about-container 
+                    .about-merits
+                        ul.merits-container 
+                            li.merits-item 91.2% Average Customer Satisfaction
+                            li.merits-item 70.3 Net Promoter Score (90th percentile)
+                            li.merits-item 174 active world-class clients
+                    .about-content
+                        h2.title.about-content__title About Us
+                        p.about-content__description Omega custom software development and IT outsourcing services. Our developers create customized software for individuals, start-ups and small and medium-sized businesses.
+                        p.about-content__description Since our founding in 2004, we have grown, increasing productivity and expanding our customer list. We have implemented more than 600 completed projects, which means that more than 400 customers have chosen us. These were different orders for small and large projects, and we successfully completed all tasks.
+                        a.btn.about-content__btn(href="#") connect with us
+            section.clients#clients
+                .wrapper.flex.clients-container 
+                    .clients-content 
+                        h2.title.clients-content__title We work for the best companies in the world
+                        p.clients-content__description We deliver exceptional technology solutions for world-class businesses in every industry, from dynamic startups and SMB to Fortune 500 companies
+                        a.btn.clients-content__btn(href="#") connect with us
+                    ul.clients-companies.flex 
+                        li.company-item
+                            img(src="img/clientsDell.png", alt="Dell")
+                        li.company-item
+                            img(src="img/clientsAmazon.png", alt="Amazon")
+                        li.company-item
+                            img(src="img/clientsEbay.png", alt="Ebay")
+                        li.company-item
+                            img(src="img/clientsSwiggy.png", alt="Swiggy")
+                        li.company-item
+                            img(src="img/clientsReuters.png", alt="Reuters")
+            section.feedback
+                .wrapper.feedback-container
+                    h3.feedback-title Want To Develop A Custom Software Solution?
+                    a.btn(href="#") connect with us
+            section.services
+                .services-container
+                    .wrapper
+                        h2.title.services-title We Provide Agile Software Development Services
+                        p.services-description Based on many years of experience, we know that every business has a different software and hardware environment. That is why we provide a wide range of software development services. Check out the key services below.
+                        .services-items.flex
+                            .services-item
+                                h4.item-title Software Consulting
+                                p.item-description Get access to our end-to-end software consulting service and create compelling transformations that automate your business functionalities and improve workflows.
+                            .services-item
+                                h4.item-title Custom Software Development
+                                p.item-description At Capital Numbers, we provide dynamic, futuristic, and result-oriented software development solutions, enabling you to gain desired business proficiency in today’s highly volatile market landscape.
+                            .services-item
+                                h4.item-title Software Integration Services
+                                p.item-description We help businesses adopt cutting-edge technologies by handling all their implementation and software integration challenges like architectural design, testing, and execution   
+                            .services-item
+                                h4.item-title Custom Software Development
+                                p.item-description At Capital Numbers, we provide dynamic, futuristic, and result-oriented software development solutions, enabling you to gain desired business proficiency in today’s highly volatile market landscape.
+                            .services-item
+                                h4.item-title Software Integration Services
+                                p.item-description We help businesses adopt cutting-edge technologies by handling all their implementation and software integration challenges like architectural design, testing, and execution  
+                        a.btn(href="#") connect with us
+            section.pricing
+                .wrapper.pricing-container
+                    h2.title.pricing-title Pricing Options for Our Services
+                    .pricing-description.flex 
+                        .pricing-item
+                            img(src="img/fixed.svg", alt="")
+                            h3.pricing-item__title  Get a Fixed Price Quote
+                            p.pricing-item__description  Save up to 30% on development costs as you don't need to hire in-house. Get custom solutions, timelines, and budgets based on our experts' thorough analysis of your needs.
+                            a.btn(href="#") connect with us            
+                        .pricing-item.sale
+                            img(src="img/hire.svg", alt="")
+                            h3.pricing-item__title Hire a Dedicated Developer Starting from $16/Hr
+                            p.pricing-item__description  Get 160+ Hours of work per month and move your projects 2x faster. The hourly rate is indicative of developers having around 5 Years of experience. Rate varies based on experience levels.
+                            a.btn(href="#") connect with us
+        footer.footer
+            .wrapper.flex.footer-container
+                .footer-description
+                    p.copyright Privacy Policy |  Terms of Service |  Do Not Sell My Personal Information
+                    p Omega Data Software 2009 – 2023. All rights reserved.
+                .logo.flex
+                        a(href="index.html") 
+                        img(src="img/omega.svg", alt="")
+                        p Omega Data Software
+
+    script(src="js/scripts.js") 
