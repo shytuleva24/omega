@@ -4,9 +4,9 @@
         {name: "about us", url: "#about"},
         {name: "clients", url: "#clients"},
         {name: "our services", url: "#services"},
-        {name: "contact us", url: "#contact"}
+        {name: "candidates", isLink:'true', url: "candidates.html"}
     ]
 mixin menu (items, myClass)
     for item in items 
         li 
-            a(data-filter=item.filter href=item.url class=myClass) #{item.name}
+            a(data-filter=item.filter data-link=item.isLink href=item.url class=myClass) #{item.name}

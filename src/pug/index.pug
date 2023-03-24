@@ -14,21 +14,7 @@ head
     link(rel="stylesheet", href="css/styles.css")
 body
     .overflow-hidden
-        header#main
-            .header.lock-padding
-                .header-container.flex.wrapper
-                    .logo.flex
-                        a(href="index.html") 
-                        img(src="img/omega.svg", alt="")
-                        p Omega Data Software
-                    .flex.menu
-                        a.btn.mobile-btn(href="#popup") hire us
-                        .menu-icon
-                            span 
-                        nav.menu-body
-                            ul.menu-list.flex
-                                +menu(menu, "scroll-to menu-link")
-                    a.btn.desctop-btn(href="#popup") hire us
+        include components/header
         main 
             section.main
                 .wrapper.main-container.flex 
@@ -118,17 +104,6 @@ body
                                 span $16/Hr
                             p.pricing-item__description  Get 160+ Hours of work per month and move your projects 2x faster. The hourly rate is indicative of developers having around 5 Years of experience. Rate varies based on experience levels.
                             a.btn(href="#") connect with us
-        footer.footer
-            .wrapper.flex.footer-container
-                .footer-description
-                    .copyright.flex 
-                        a(href="#")  Privacy Policy  
-                        a(href="#") Terms of Service
-                        a(href="#") Do Not Sell My Personal Information
-                    p Omega Data Software 2009 – 2023. All rights reserved.
-                .logo.flex
-                        a(href="index.html") 
-                        img(src="img/omega.svg", alt="")
-                        p Omega Data Software
+        include components/footer
         //- .success-message Your message was successfully sent!
     script(src="js/scripts.js") 

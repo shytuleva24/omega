@@ -1,0 +1,123 @@
+@import components/mixin
+
+.candidat
+    padding-top: 200rem
+    padding-bottom: 100rem
+.candidate-name
+    font-size: 60rem
+    letter-spacing: 2rem
+    font-weight: 700
+.candidate-direction
+    padding: 15rem 0 40rem
+    font-size: 36rem
+    color: $colorAccent
+    font-weight: 600
+.candidate-description
+    margin-bottom: 30rem
+    p
+        font-size: 18rem
+        padding-bottom: 15rem
+.candidate-skills
+    padding: 50rem
+    text-align: center
+    background-color: #f3f3f3
+    border-radius: 5rem
+.scills-container
+    flex-direction: column
+    gap: 50rem
+    +media(450)
+        flex-direction: row
+        
+
+.main-scills,
+.other-scills
+    width: 100%
+    h4
+        font-size: 20rem
+        font-weight: 700
+    +media(450)
+        width: 50%
+
+.scills-items
+    padding: 25rem 0 30rem
+.scills-item
+    margin-bottom: 10rem
+    padding: 10rem 30rem
+    min-height: 60rem
+    background-color: #fff
+    border-radius: 25rem
+    justify-content: space-between 
+    align-items: center 
+    .flex
+        align-items: center  
+.skils-item__name
+    font-size: 18rem
+    font-weight: 700
+.skils-item__experience
+    font-size: 18rem
+.skils-item__logo
+    margin-right: 10rem
+    max-width: 40rem
+
+// employment
+
+.employment-title
+    margin-bottom: 35rem
+    font-size: 60rem
+    letter-spacing: 2rem
+    font-weight: 700
+
+.employment-container 
+    margin: 0 auto
+    padding-left: 27px
+    position: relative
+    max-width: 715rem
+    &::before
+        content: ""
+        position: absolute
+        width: 2px
+        height: 98%
+        left: 0
+        bottom: 0
+        background-color: $colorAccent
+
+.employment-item
+    margin-bottom: 90rem
+    font-size: 18rem
+    &:last-child
+        margin-bottom: 0
+    li
+        margin-bottom: 15rem
+.employment-position
+    padding-bottom: 10rem
+    font-size: 36rem
+    color: $colorAccent
+    font-weight: 600
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        left: -26px
+        top: 50%
+        width: 16px
+        height: 16px
+        background-color: $colorAccent
+        border-radius: 50%
+        transform: translate(-50%, -50%)
+.sub-title
+    font-size: 20rem
+    font-weight: 700
+.employment-experience
+    margin-bottom: 25rem
+.tehnologies
+    align-items: center
+    flex-wrap: wrap
+    gap: 5rem
+    .sub-title
+        padding-right: 25rem
+.tehnologies-item
+    background-color: #f3f3f3
+    border-radius: 25rem
+    padding: 10rem 35rem
+    align-items: center
+    min-height: 60rem

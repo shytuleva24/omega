@@ -106,8 +106,10 @@ if (iconMenu) {
 if (homeMenuLinks.length > 0) {
     homeMenuLinks.forEach(link => {
         link.onclick = function (event) {
-            event.preventDefault();
-            onMenuLinkClick(this.getAttribute("href"));
+            if(!link.hasAttribute('data-link')) {
+                event.preventDefault();
+                onMenuLinkClick(this.getAttribute("href"));
+            }
         }
     });
 
