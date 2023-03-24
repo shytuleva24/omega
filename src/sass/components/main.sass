@@ -258,6 +258,8 @@ input:-webkit-autofill:active
     min-height: 66rem
     font-size: 24rem
     font-weight: 700
+    span
+        color: $colorAccent
 .pricing-item__description
     margin-bottom: 35rem
     font-weight: 300
@@ -290,3 +292,13 @@ input:-webkit-autofill:active
     font-size: 14rem
     padding-bottom: 15rem
     font-weight: 400
+    a
+        padding: 0 10rem
+        border-right: 1px solid $colorMainText
+        transition: $transition
+        &:last-child
+            border-right: none
+        &:first-child
+            padding-left: 0 
+        &:hover
+            color: $colorAccent
