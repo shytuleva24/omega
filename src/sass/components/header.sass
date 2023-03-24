@@ -31,16 +31,17 @@
     width: 100%
     background: #fff
     padding: 30rem 
-    transition: left .3s ease
+    transition: left .5s ease
     overflow: auto
+    height: 100vh
     +media(768)
+        height: auto
         background: transparent
         position: static
         padding: 0
         width: auto
         overflow: visible
 .menu-body.open-menu
-    height: 100vh
     left: 0
     span
         background-color: #fff
