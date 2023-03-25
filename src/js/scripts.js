@@ -181,7 +181,6 @@ function animBlockInScroll() {
                 }
                 if ((window.pageYOffset > animItemOffSet - animItemPoint) && window.pageYOffset < (animItemOffSet + animItemHeight)) {
                     animItem.classList.add(`active-anim`);
-                    console.log((window.pageYOffset > animItemOffSet - animItemPoint) && window.pageYOffset < (animItemOffSet + animItemHeight));
                 } 
             });
         }
