@@ -1,11 +1,14 @@
 <?php
+
 $jsonData = file_get_contents('php://input');
 $data = json_decode($jsonData, true);
 
 $name = $data['name'];
 $email = $data['email'];
+$phone = $data['phone'];
 $message = 'Name:   ' . $name . "\r\n" .
             'From:   ' . $email . "\r\n" .
+            'Phone:   ' . $phone . "\r\n" .
             'Message:   ' . $data['message'] . "\r\n";
 $hash = $data['hash'];
 

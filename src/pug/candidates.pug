@@ -15,57 +15,71 @@ head
     link(rel="stylesheet", href="css/candidates.css")
 body
     .overflow-hidden
-        include components/header
+        header#main
+            .header.lock-padding
+                .header-container.flex.wrapper
+                    .logo.flex
+                        a(href="index.html") 
+                        img(src="img/omega.svg", alt="")
+                        p Omega Data Software
+                    .flex.menu
+                        a.btn.mobile-btn(href="#popup") hire us
+                        .menu-icon
+                            span 
+                        nav.menu-body
+                            ul.menu-list.flex
+                                +menu(menuCandidats, "scroll-to menu-link")
+                    a.btn.desctop-btn(href="#popup") hire us
         main 
             section 
                 .wrapper.candidat 
-                    h2.candidate-name Khadija N.
-                    h3.sub-title.candidate-direction Php Developer 
+                    h2.candidate-name.anim-items.anim-show Khadija N.
+                    h3.sub-title.candidate-direction.anim-items.anim-show Php Developer 
                     .candidate-description
-                        p Professional Symfony and PHP developer with over five years of experience in software development.
-                        p Khadija has extensive, robust problem-solving skills and proven experience creating and designing web applications in a test-driven environment.
-                        p Experienced in all five stages of the web development process, including information gathering, planning, design, development, testing, delivery, and maintenance.
-                        p Has profound experience in Shopware 5 and 6, grounded on solid skills in Symfony and Vue.js frameworks.
-                        p Khadija has excellent communication skills and places passion in her work. She is a very enthusiastic Symfony and PH developer, bringing great spirit to a team.
+                        p.anim-items.anim-show Professional Symfony and PHP developer with over five years of experience in software development.
+                        p.anim-items.anim-show Khadija has extensive, robust problem-solving skills and proven experience creating and designing web applications in a test-driven environment.
+                        p.anim-items.anim-show Experienced in all five stages of the web development process, including information gathering, planning, design, development, testing, delivery, and maintenance.
+                        p.anim-items.anim-show Has profound experience in Shopware 5 and 6, grounded on solid skills in Symfony and Vue.js frameworks.
+                        p.anim-items.anim-show Khadija has excellent communication skills and places passion in her work. She is a very enthusiastic Symfony and PH developer, bringing great spirit to a team.
                     .candidate-skills 
                         .flex.scills-container
                             .main-scills
-                                h4 Main expertise
+                                h4.anim-items.anim-show Main expertise
                                 ul.scills-items
-                                    li.scills-item.flex
+                                    li.scills-item.flex.anim-items.anim-show
                                         .flex
                                             img.skils-item__logo(src="img/php.png", alt="")
                                             p.skils-item__name PHP
                                         p.skils-item__experience 5 year
-                                    li.scills-item.flex
+                                    li.scills-item.flex.anim-items.anim-show
                                         .flex
                                             img.skils-item__logo(src="img/symphony.png", alt="")
                                             p.skils-item__name Symphony
                                         p.skils-item__experience 4 year
                             .other-scills
-                                h4 Other skills
+                                h4.anim-items.anim-show Other skills
                                 ul.scills-items
-                                    li.scills-item.flex
+                                    li.scills-item.flex.anim-items.anim-show
                                         .flex
                                             img.skils-item__logo(src="img/sql.png", alt="")
                                             p.skils-item__name SQL
                                         p.skils-item__experience 3 year
-                                    li.scills-item.flex
+                                    li.scills-item.flex.anim-items.anim-show
                                         .flex
                                             img.skils-item__logo(src="img/vue.png", alt="")
                                             p.skils-item__name Vue.js
                                         p.skils-item__experience 3 year
-                                    li.scills-item.flex
+                                    li.scills-item.flex.anim-items.anim-show
                                         .flex
                                             img.skils-item__logo(src="img/zend.png", alt="")
                                             p.skils-item__name Zend
                                         p.skils-item__experience 2 year
-                        a.btn(href="#") see more
+                        a.btn.anim-items.anim-show(href="#") see more
             section 
                 .wrapper.employment 
-                    h1.employment-title Employment
+                    h1.employment-title.anim-items.anim-show Employment
                     .employment-container 
-                        .employment-item
+                        .employment-item.anim-items.anim-show
                             h3.employment-position Senior Web developer
                             h4.sub-title.employment-experience BLMEDiA GmbH - 11 months
                             ul 
@@ -83,7 +97,7 @@ body
                                 .flex.tehnologies-item
                                     img.skils-item__logo(src="img/zend.png", alt="")
                                     p.skils-item__name Zend
-                        .employment-item
+                        .employment-item.anim-items.anim-show
                             h3.employment-position Senior Web designer
                             h4.sub-title.employment-experience Spread Content - Choueiri Group - 3 years 11 months
                             ul 

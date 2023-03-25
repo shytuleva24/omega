@@ -1,8 +1,8 @@
 footer.footer
     .wrapper.flex.footer-container
         .footer-description
-            .copyright.flex 
-                a(href="#")  Privacy Policy  
+            .copyright.flex
+                a(href="#") Privacy Policy  
                 a(href="#") Terms of Service
                 a(href="#") Do Not Sell My Personal Information
             p Omega Data Software 2009 – 2023. All rights reserved.
@@ -10,3 +10,21 @@ footer.footer
                 a(href="index.html") 
                 img(src="img/omega.svg", alt="")
                 p Omega Data Software
+section.popup#popup
+    .popup_body 
+        .popup_content.main-form
+            a.popup-close.close-popup(href="#") +
+            h3.main-form__title Hire the Top Software Development Professionals in Latin America
+            form#popupForm(action="" method='POST' autocomplete="off") 
+                label.label(for="nameUserPopup") 
+                    input.input.name#nameUserPopup(type="text" name="nameUserPopup" placeholder='Your Name' required)
+                label.label(for="emailUser")
+                    input.input.email#emailUser(type="email" name="emailUserPopup" placeholder='Your  work email' required) 
+                label.label(for="phoneUserPopup")
+                    input.input.phone#phoneUsePopupr(type="number" name="phoneUserPopup" placeholder='Your  phone number') 
+                label.label(for="messagePopup")
+                    textarea.textarea.message#messagePopup(name="messagePopup" placeholder="What we can do for you?")
+                button.btn.send-button(type="submit") start your business
+.success-message Your message was successfully sent!
+
+

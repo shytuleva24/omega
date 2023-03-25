@@ -6,6 +6,14 @@
         {name: "our services", url: "#services"},
         {name: "candidates", isLink:'true', url: "candidates.html"}
     ]
+-
+    let menuCandidats = [
+        {name: "main", isLink:'true', url: "index.html"},
+        {name: "about us", isLink:'true', url: "index.html#about"},
+        {name: "clients", isLink:'true', url: "index.html#clients"},
+        {name: "our services", isLink:'true', url: "index.html#services"},
+        {name: "candidates", url: "candidates.html"}
+    ]
 mixin menu (items, myClass)
     for item in items 
         li 

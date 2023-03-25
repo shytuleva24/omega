@@ -14,3 +14,96 @@
     font-size: 14rem
     padding-bottom: 15rem
     font-weight: 400
+
+.popup
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba($colorMainText, .6)
+    top: 0
+    left: 0
+    opacity: 0
+    visibility: hidden
+    overflow-x: hidden
+    overflow-y: auto
+    transition: all .5s ease
+    z-index: 9999
+
+.popup.open
+    opacity: 1
+    visibility: visible
+
+.popup.open .popup_content
+    transform: translate(0, 0)
+    opacity: 1
+
+.popup_body 
+    min-height: 100%
+    padding: 30rem 10rem
+    display: flex
+    align-items: center
+    justify-content: center
+
+.popup_content
+    position: relative
+    padding: 35rem 50rem
+    max-width: 500rem
+    transition: $transition
+    opacity: 0
+    transform: translateY(-80%)
+
+.popup-close
+    position: absolute
+    right: 20rem
+    top: 20rem
+    font-size: 40rem
+    line-height: 20rem
+    text-decoration: none
+    font-weight: 300
+    z-index: 2
+    transform: rotate(45deg)
+    transition: $transition
+    &:hover
+        color: $colorAccent
+.send-button.loading:before 
+    content: ''
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    border: 3px solid transparent
+    border-top-color: #fff
+    animation: spin 0.8s linear infinite
+
+
+.success-message 
+    display: none
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -60%)
+    padding: 20px
+    background-color: $colorAccent
+    color: #fff
+    border-radius: 5px
+    box-shadow: 0 0 10px rgba($colorMainText, 0.3)
+    animation: show-message 0.3s ease-in-out forwards
+    z-index: 99999
+
+@keyframes spin 
+    0% 
+        transform: translate(-50%, -50%) rotate(0deg)
+    100% 
+        transform: translate(-50%, -50%) rotate(360deg)
+
+@keyframes show-message 
+    0% 
+        transform: translate(-50%, -60%)
+        opacity: 0
+    100% 
+        transform: translate(-50%, -50%)
+        opacity: 1

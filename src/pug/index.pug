@@ -17,93 +17,92 @@ body
         include components/header
         main 
             section.main
-                .wrapper.main-container.flex 
-                    .main-content 
-                        p.sub-title Top Software Development Company
-                        h1.title.main-content__title Custom Software Development Services
-                        p.main-content__description We help enterprises create new custom software solutions, modernize legacy systems, and improve existing systems, besides integrating them with new ones.
-                    .main-form
+                .wrapper.main-container.flex
+                    .main-content
+                        p.sub-title.anim-items.anim-show Top Software Development Company
+                        h1.title.main-content__title.anim-items.anim-show Custom Software Development Services
+                        p.main-content__description.anim-items.anim-show We help enterprises create new custom software solutions, modernize legacy systems, and improve existing systems, besides integrating them with new ones.
+                    .main-form.anim-items.anim-show
                         h3.main-form__title Hire the Top Software Development Professionals in Latin America
                         form#form(action="" method='POST' autocomplete="off") 
                             label.label(for="nameUser") 
-                                input.input#nameUser(type="text" name="nameUser" placeholder='Your Name')
+                                input.input#nameUser(type="text" name="nameUser" placeholder='Your Name' required)
                             label.label(for="emailUser")
-                                input.input#emailUser(type="email" name="emailUser" placeholder='Your  work email') 
+                                input.input#emailUser(type="email" name="emailUser" placeholder='Your  work email' required) 
                             label.label(for="phoneUser")
                                 input.input#phoneUser(type="number" name="phoneUser" placeholder='Your  phone number') 
                             label.label(for="message")
                                 textarea.textarea#message(name="message" placeholder="What we can do for you?" )
                             button.btn.send-button(type="submit") start your business
             section.about#about
-                .wrapper.flex.about-container 
+                .wrapper.flex.about-container
                     .about-merits
                         ul.merits-container 
-                            li.merits-item 91.2% Average Customer Satisfaction
-                            li.merits-item 70.3 Net Promoter Score (90th percentile)
-                            li.merits-item 174 active world-class clients
+                            li.merits-item.anim-items.anim-show 91.2% Average Customer Satisfaction
+                            li.merits-item.anim-items.anim-show 70.3 Net Promoter Score (90th percentile)
+                            li.merits-item.anim-items.anim-show 174 active world-class clients
                     .about-content
-                        h2.title.about-content__title About Us
-                        p.about-content__description Omega custom software development and IT outsourcing services. Our developers create customized software for individuals, start-ups and small and medium-sized businesses.
-                        p.about-content__description Since our founding in 2004, we have grown, increasing productivity and expanding our customer list. We have implemented more than 600 completed projects, which means that more than 400 customers have chosen us. These were different orders for small and large projects, and we successfully completed all tasks.
-                        a.btn.about-content__btn(href="#") connect with us
+                        h2.title.about-content__title.anim-items.anim-show About Us
+                        p.about-content__description.anim-items.anim-show Omega custom software development and IT outsourcing services. Our developers create customized software for individuals, start-ups and small and medium-sized businesses.
+                        p.about-content__description.anim-items.anim-show Since our founding in 2004, we have grown, increasing productivity and expanding our customer list. We have implemented more than 600 completed projects, which means that more than 400 customers have chosen us. These were different orders for small and large projects, and we successfully completed all tasks.
+                        a.btn.popup-link.about-content__btn.anim-items.anim-show(href="#popup") connect with us
             section.clients#clients
-                .wrapper.flex.clients-container 
-                    .clients-content 
-                        h2.title.clients-content__title We work for the best companies in the world
-                        p.clients-content__description We deliver exceptional technology solutions for world-class businesses in every industry, from dynamic startups and SMB to Fortune 500 companies
-                        a.btn.clients-content__btn(href="#") connect with us
-                    ul.clients-companies.flex 
-                        li.company-item
+                .wrapper.flex.clients-container
+                    .clients-content
+                        h2.title.clients-content__title.anim-show.anim-items We work for the best companies in the world
+                        p.clients-content__description.anim-show.anim-items We deliver exceptional technology solutions for world-class businesses in every industry, from dynamic startups and SMB to Fortune 500 companies
+                        a.btn.popup-link.clients-content__btn.anim-show.anim-items(href="#popup") connect with us
+                    ul.clients-companies.flex
+                        li.company-item.anim-show.anim-items
                             img(src="img/clientsDell.png", alt="Dell")
-                        li.company-item
+                        li.company-item.anim-show.anim-items
                             img(src="img/clientsAmazon.png", alt="Amazon")
-                        li.company-item
+                        li.company-item.anim-show.anim-items
                             img(src="img/clientsEbay.png", alt="Ebay")
-                        li.company-item
+                        li.company-item.anim-show.anim-items
                             img(src="img/clientsSwiggy.png", alt="Swiggy")
-                        li.company-item
+                        li.company-item.anim-show.anim-items
                             img(src="img/clientsReuters.png", alt="Reuters")
             section.feedback
-                .wrapper.feedback-container
-                    h3.feedback-title Want To Develop A Custom Software Solution?
-                    a.btn(href="#") connect with us
+                .wrapper.feedback-container.anim-items
+                    h3.feedback-title.anim-show Want To Develop A Custom Software Solution?
+                    a.btn.popup-link.anim-show(href="#popup") connect with us
             section.services#services
                 .services-container
                     .wrapper
-                        h2.title.services-title We Provide Agile Software Development Services
-                        p.services-description Based on many years of experience, we know that every business has a different software and hardware environment. That is why we provide a wide range of software development services. Check out the key services below.
+                        h2.title.services-title.anim-items.anim-show We Provide Agile Software Development Services
+                        p.services-description.anim-items.anim-show  Based on many years of experience, we know that every business has a different software and hardware environment. That is why we provide a wide range of software development services. Check out the key services below.
                         .services-items.flex
-                            .services-item
+                            .services-item.anim-items.anim-show
                                 h4.item-title Software Consulting
                                 p.item-description Get access to our end-to-end software consulting service and create compelling transformations that automate your business functionalities and improve workflows.
-                            .services-item
+                            .services-item.anim-items.anim-show
                                 h4.item-title Custom Software Development
                                 p.item-description At Capital Numbers, we provide dynamic, futuristic, and result-oriented software development solutions, enabling you to gain desired business proficiency in today’s highly volatile market landscape.
-                            .services-item
+                            .services-item.anim-items.anim-show
                                 h4.item-title Software Integration Services
                                 p.item-description We help businesses adopt cutting-edge technologies by handling all their implementation and software integration challenges like architectural design, testing, and execution   
-                            .services-item
+                            .services-item.anim-items.anim-show
                                 h4.item-title Custom Software Development
                                 p.item-description At Capital Numbers, we provide dynamic, futuristic, and result-oriented software development solutions, enabling you to gain desired business proficiency in today’s highly volatile market landscape.
-                            .services-item
+                            .services-item.anim-items.anim-show
                                 h4.item-title Software Integration Services
                                 p.item-description We help businesses adopt cutting-edge technologies by handling all their implementation and software integration challenges like architectural design, testing, and execution  
-                        a.btn(href="#") hire us
+                        a.btn.popup-link.anim-items.anim-show(href="#popup") hire us
             section.pricing
                 .wrapper.pricing-container
-                    h2.title.pricing-title Pricing Options for Our Services
+                    h2.title.pricing-title.anim-items.anim-show Pricing Options for Our Services
                     .pricing-description.flex 
-                        .pricing-item
+                        .pricing-item.anim-items.anim-show
                             img(src="img/fixed.svg", alt="")
                             h3.pricing-item__title  Get a Fixed Price Quote
                             p.pricing-item__description  Save up to 30% on development costs as you don't need to hire in-house. Get custom solutions, timelines, and budgets based on our experts' thorough analysis of your needs.
-                            a.btn(href="#") connect with us            
-                        .pricing-item.sale
+                            a.btn.popup-link(href="#popup") connect with us            
+                        .pricing-item.sale.anim-items.anim-show
                             img(src="img/hire.svg", alt="")
                             h3.pricing-item__title Hire a Dedicated Developer Starting from 
                                 span $16/Hr
                             p.pricing-item__description  Get 160+ Hours of work per month and move your projects 2x faster. The hourly rate is indicative of developers having around 5 Years of experience. Rate varies based on experience levels.
-                            a.btn(href="#") connect with us
+                            a.btn.popup-link(href="#popup") connect with us
         include components/footer
-        //- .success-message Your message was successfully sent!
     script(src="js/scripts.js") 

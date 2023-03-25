@@ -66,23 +66,45 @@ img
         background-color: transparent
         color: $colorAccent
         // box-shadow: 10px 10px 19px -3px rgba(0,0,0,0.15)
+// .anim-items
+//     overflow: hidden
+// .active-anim
+//     animation-name: fadeInUp
 
-// .animated 
+// .anim-show 
 //     animation-duration: 1.2s
 //     animation-fill-mode: both
 //     opacity: 0
-
-// .animated.fadeInUp  
 //     animation-name: fadeInUp
 
+// .anim-show.active-anim,
+// .active-anim .anim-show
+//     animation-name: fadeInUp
+//     // opacity: 1
+//     // transform: translate(0px, 0px)
+     
+// .active-anim 
+//     opacity: 1 
+//     transform: none
+//     transition: all 0.8s ease 0s 
+.anim-show 
+    transform: translate3d(0, 20px, 0) scale(.97)
+    opacity: 0
+    transition: all .8s ease 0s 
 
-// @keyframes fadeInUp 
-//     from 
-//         opacity: 0
-//         transform: translate3d(0, 100%, 0)
-//     to 
-//         opacity: 1
-//         transform: none
+.anim-show.active-anim
+    opacity: 1
+    transform: none
+    transition: all .8s ease 0s 
+
+.active-anim  
+    .anim-show
+        opacity: 1
+        transform: none
+        transition: all .58s ease 0s 
+
+
+
     
 
 
