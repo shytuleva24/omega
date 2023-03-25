@@ -3,15 +3,50 @@
 .candidat
     padding-top: 200rem
     padding-bottom: 100rem
+.candidat-container
+    padding-bottom: 15rem
+    gap: 30rem
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+    +media(640)
+        align-items: flex-start
+        flex-direction: row
+.candidat-about
+    +media(640)
+        width: 50%
+
+.candidate-photo_container
+    width: 60%
+    padding: 45rem
+    border-radius: 5rem
+    background-color: #f3f3f3
+    order: -1
+    +media(640)
+        width: 40%
+        order: 0
+
+.candidate-photo
+    border-radius: 5rem
+    background-color: #cd7933
+    
+
 .candidate-name
     font-size: 60rem
     letter-spacing: 2rem
     font-weight: 700
+    text-align: center
+    +media(640)
+        text-align: left
+
 .candidate-direction
     padding: 15rem 0 40rem
     font-size: 36rem
+    text-align: center
     color: $colorAccent
     font-weight: 600
+    +media(640)
+        text-align: left
 .candidate-description
     margin-bottom: 30rem
     p
