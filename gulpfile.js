@@ -31,7 +31,7 @@ export const html = () => {
         "src/pug/*.pug"
     ])
     .pipe(pug({
-        //pretty: true
+        pretty: true
     }))
     .pipe(gulp.dest("docs"))
     .pipe(browserSync.reload({

@@ -31,99 +31,261 @@ body
                                 +menu(menuCandidats, "scroll-to menu-link")
                     a.btn.desctop-btn.popup-link(href="#popup") hire us
         main 
-            section 
-                .wrapper.candidat 
-                    .candidat-container.flex
-                        .candidat-about
-                            h2.candidate-name.anim-items.anim-show Khadija N.
-                            h3.candidate-direction.anim-items.anim-show Php Developer 
-                            .candidate-description
-                                p.anim-items.anim-show Professional Symfony and PHP developer with over five years of experience in software development.
-                                p.anim-items.anim-show Khadija has extensive, robust problem-solving skills and proven experience creating and designing web applications in a test-driven environment.
-                                p.anim-items.anim-show Experienced in all five stages of the web development process, including information gathering, planning, design, development, testing, delivery, and maintenance.
-                                p.anim-items.anim-show Has profound experience in Shopware 5 and 6, grounded on solid skills in Symfony and Vue.js frameworks.
-                                p.anim-items.anim-show Khadija has excellent communication skills and places passion in her work. She is a very enthusiastic Symfony and PH developer, bringing great spirit to a team.
-                        .candidate-photo_container.anim-items.anim-show
-                            img.candidate-photo(src="img/phptoCandidat.jpg", alt="photo Khadija")    
-                    .candidate-skills 
-                        .flex.scills-container
-                            .main-scills
-                                h4.anim-items.anim-show Main expertise
-                                ul.scills-items
-                                    li.scills-item.flex.anim-items.anim-show
-                                        .flex
-                                            img.skils-item__logo(src="img/php.png", alt="")
-                                            p.skils-item__name PHP
-                                        p.skils-item__experience 5 year
-                                    li.scills-item.flex.anim-items.anim-show
-                                        .flex
-                                            img.skils-item__logo(src="img/symphony.png", alt="")
-                                            p.skils-item__name Symphony
-                                        p.skils-item__experience 4 year
-                            .other-scills
-                                h4.anim-items.anim-show Other skills
-                                ul.scills-items
-                                    li.scills-item.flex.anim-items.anim-show
-                                        .flex
-                                            img.skils-item__logo(src="img/sql.png", alt="")
-                                            p.skils-item__name SQL
-                                        p.skils-item__experience 3 year
-                                    li.scills-item.flex.anim-items.anim-show
-                                        .flex
-                                            img.skils-item__logo(src="img/vue.png", alt="")
-                                            p.skils-item__name Vue.js
-                                        p.skils-item__experience 3 year
-                                    li.scills-item.flex.anim-items.anim-show
-                                        .flex
-                                            img.skils-item__logo(src="img/zend.png", alt="")
-                                            p.skils-item__name Zend
-                                        p.skils-item__experience 2 year
-                        //- a.btn.anim-items.anim-show(href="#") see more
-            section 
-                .wrapper.employment 
-                    h1.employment-title.anim-items.anim-show Employment
-                    .employment-container 
-                        .employment-item.anim-items.anim-show
-                            h3.employment-position Senior Web developer
-                            h4.sub-title.employment-experience BLMEDiA GmbH - 11 months
-                            ul 
-                                li • Develop easy-to-manage and configurable Shopware plugins, and build additional functions for Shopware platform projects to address specific business needs.
-                                li • Fully migrate existing Shopware 5 plugins to a brand new Shopware 6 system.
-                            .tehnologies.flex 
-                                h4.sub-title Technologies:
-                                //- .tehnologies-items.flex
-                                .flex.tehnologies-item
-                                    img.skils-item__logo(src="img/php.png", alt="")
-                                    p.skils-item__name PHP
-                                .flex.tehnologies-item
-                                    img.skils-item__logo(src="img/symphony.png", alt="")
-                                    p.skils-item__name Symphony
-                                .flex.tehnologies-item
-                                    img.skils-item__logo(src="img/zend.png", alt="")
-                                    p.skils-item__name Zend
-                        .employment-item.anim-items.anim-show
-                            h3.employment-position Senior Web designer
-                            h4.sub-title.employment-experience Spread Content - Choueiri Group - 3 years 11 months
-                            ul 
-                                li Roles and responsibilities:
-                                li • Actively contributed to creating a powerful content management system (CMS) to serve as an interface for clients using the Symfony framework.
-                                li • Launched Related engine microservice returns related articles.
-                                li • Achieved a reusable code structure with CMS that supports multiple projects.
-                                li • Set up an API token authentication system using Symfony Custom Authentication System
-                                li • Integrated Redis database to create quick access to any needed configuration for the web app.
-                                li • Helped design an extensive graph database (Neo4j to store the live matches score results, teams, players, and stadium details for the Eurosport Arabia website.
-                                li • Integrated Webpack Encore for managing the front-end assets and minifving the CSS and laveScrint files
-                            .tehnologies.flex 
-                                h4.sub-title Technologies:
-                                .flex.tehnologies-item
-                                    img.skils-item__logo(src="img/php.png", alt="")
-                                    p.skils-item__name PHP
-                                .flex.tehnologies-item
-                                    img.skils-item__logo(src="img/symphony.png", alt="")
-                                    p.skils-item__name Symphony
-                                .flex.tehnologies-item
-                                    img.skils-item__logo(src="img/zend.png", alt="")
-                                    p.skils-item__name Zend
+            section
+                .wrapper.candidats
+                    h1.candidats-title.anim-items.anim-show Talented developers available now
+                    ul.candidats-container.flex 
+                        li.candidat-item.flex.anim-items.anim-show
+                            a.popup-link(href="#popupKhadi") 
+                            .candidat-photo
+                                img(src="img/candidatePhoto1.jpg", alt="Khadija N. Php Developer")
+                            .candidats-item__description
+                                h3.candidat-item__title Khadija N.
+                                h4.candidat-item__sub-title Php Developer
+                                ul.candidat-item__scills.flex 
+                                    li.skills-item SQL
+                                    li.skills-item PHP
+                                    li.skills-item ...
+                                p.candidat-item__about Professional Symfony and PHP developer with over five years of experience in software development.Khadija has extensive, robust problem-solving skills.
+                        li.candidat-item.flex.anim-items.anim-show
+                            a.popup-link(href="#popupKhadi2") 
+                            .candidat-photo
+                                img(src="img/candidatePhoto2.jpg", alt="Khadija N. Php Developer")
+                            .candidats-item__description
+                                h3.candidat-item__title Khadija N.
+                                h4.candidat-item__sub-title Php Developer
+                                ul.candidat-item__scills.flex 
+                                    li.skills-item SQL
+                                    li.skills-item PHP
+                                    li.skills-item ...
+                                p.candidat-item__about Professional Symfony and PHP developer with over five years of experience in software development.Khadija has extensive, robust problem-solving skills.
+                        li.candidat-item.flex.anim-items.anim-show
+                            a.popup-link(href="#popupKhadi") 
+                            .candidat-photo
+                                img(src="img/candidatePhoto3.jpg", alt="Khadija N. Php Developer")
+                            .candidats-item__description
+                                h3.candidat-item__title Khadija N.
+                                h4.candidat-item__sub-title Php Developer
+                                ul.candidat-item__scills.flex 
+                                    li.skills-item SQL
+                                    li.skills-item PHP
+                                    li.skills-item ...
+                                p.candidat-item__about Professional Symfony and PHP developer with over five years of experience in software development.Khadija has extensive, robust problem-solving skills.
+                        li.candidat-item.flex.anim-items.anim-show
+                            a.popup-link(href="#popupKhadi") 
+                            .candidat-photo
+                                img(src="img/candidatePhoto4.jpg", alt="Khadija N. Php Developer")
+                            .candidats-item__description
+                                h3.candidat-item__title Khadija N.
+                                h4.candidat-item__sub-title Php Developer
+                                ul.candidat-item__scills.flex 
+                                    li.skills-item SQL
+                                    li.skills-item PHP
+                                    li.skills-item ...
+                                p.candidat-item__about Professional Symfony and PHP developer with over five years of experience in software development.Khadija has extensive, robust problem-solving skills.
+                        li.candidat-item.flex.anim-items.anim-show 
+                            a.popup-link(href="#popupKhadi") 
+                            .candidat-photo
+                                img(src="img/candidatePhoto5.jpg", alt="Khadija N. Php Developer")
+                            .candidats-item__description
+                                h3.candidat-item__title Khadija N.
+                                h4.candidat-item__sub-title Php Developer
+                                ul.candidat-item__scills.flex 
+                                    li.skills-item SQL
+                                    li.skills-item PHP
+                                    li.skills-item ...
+                                p.candidat-item__about Professional Symfony and PHP developer with over five years of experience in software development.Khadija has extensive, robust problem-solving skills.
+                        li.candidat-item.flex.anim-items.anim-show 
+                            a.popup-link(href="#popupKhadi") 
+                            .candidat-photo
+                                img(src="img/candidatePhoto6.jpg", alt="Khadija N. Php Developer")
+                            .candidats-item__description
+                                h3.candidat-item__title Khadija N.
+                                h4.candidat-item__sub-title Php Developer
+                                ul.candidat-item__scills.flex 
+                                    li.skills-item SQL
+                                    li.skills-item PHP
+                                    li.skills-item ...
+                                p.candidat-item__about Professional Symfony and PHP developer with over five years of experience in software development.Khadija has extensive, robust problem-solving skills.
+            section.popup.popup-card#popupKhadi
+                .popup_body
+                    .popup_content
+                        a.popup-close.close-popup(href="#") +
+                        .popup-about.flex 
+                            .popup-photo 
+                                img(src="img/candidatePhoto1.jpg", alt="Khadija N. Php Developer")
+                            .popup-decription 
+                                h2.popup-title Khadija N.
+                                h3.popup-sub Php Developer
+                                p.popup-text Professional Symfony and PHP developer with over five years of experience in software development.Khadija has extensive, robust problem-solving skills and proven experience creating and designing web applications in a test-driven environment.
+                                p.popup-text  Experienced in all five stages of the web development process, including information gathering, planning, design, development, testing, delivery, and maintenance.
+                                p.popup-text  Has profound experience in Shopware 5 and 6, grounded on solid skills in Symfony and Vue.js frameworks.
+                            .popup-scills 
+                                .main-scills
+                                    h4 Main expertise
+                                    ul.scills-items
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/php.png", alt="")
+                                                p.skils-item__name PHP
+                                            p.skils-item__experience 5 year
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/symphony.png", alt="")
+                                                p.skils-item__name Symphony
+                                            p.skils-item__experience 4 year
+                                .other-scills
+                                    h4 Other skills
+                                    ul.scills-items
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/sql.png", alt="")
+                                                p.skils-item__name SQL
+                                            p.skils-item__experience 3 year
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/vue.png", alt="")
+                                                p.skils-item__name Vue.js
+                                            p.skils-item__experience 3 year
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/zend.png", alt="")
+                                                p.skils-item__name Zend
+                                            p.skils-item__experience 2 year
+                        .popup-employment
+                            h2.popup-title Employment 
+                            .employment-container
+                                span
+                                .scroll
+                                    .employment-item
+                                        h3.employment-position Senior Web developer
+                                        h4.sub-title.employment-experience BLMEDiA GmbH - 11 months
+                                        ul 
+                                            li • Develop easy-to-manage and configurable Shopware plugins, and build additional functions for Shopware platform projects to address specific business needs.
+                                            li • Fully migrate existing Shopware 5 plugins to a brand new Shopware 6 system.
+                                        .tehnologies.flex 
+                                            h4.sub-title Technologies:
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/php.png", alt="")
+                                                p.skils-item__name PHP
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/symphony.png", alt="")
+                                                p.skils-item__name Symphony
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/zend.png", alt="")
+                                                p.skils-item__name Zend
+                                    .employment-item
+                                        h3.employment-position Senior Web designer
+                                        h4.sub-title.employment-experience Spread Content - Choueiri Group - 3 years 11 months
+                                        ul 
+                                            li Roles and responsibilities:
+                                            li • Actively contributed to creating a powerful content management system (CMS) to serve as an interface for clients using the Symfony framework.
+                                            li • Launched Related engine microservice returns related articles.
+                                            li • Achieved a reusable code structure with CMS that supports multiple projects.
+                                            li • Set up an API token authentication system using Symfony Custom Authentication System
+                                            li • Integrated Redis database to create quick access to any needed configuration for the web app.
+                                            li • Helped design an extensive graph database (Neo4j to store the live matches score results, teams, players, and stadium details for the Eurosport Arabia website.
+                                            li • Integrated Webpack Encore for managing the front-end assets and minifving the CSS and laveScrint files
+                                        .tehnologies.flex 
+                                            h4.sub-title Technologies:
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/php.png", alt="")
+                                                p.skils-item__name PHP
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/symphony.png", alt="")
+                                                p.skils-item__name Symphony
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/zend.png", alt="")
+                                                p.skils-item__name Zend
+            section.popup.popup-card#popupKhadi2
+                .popup_body
+                    .popup_content
+                        a.popup-close.close-popup(href="#") +
+                        .popup-about.flex 
+                            .popup-photo 
+                                img(src="img/candidatePhoto2.jpg", alt="Khadija N. Php Developer")
+                            .popup-decription 
+                                h2.popup-title Khadija N.
+                                h3.popup-sub Php Developer
+                                p.popup-text Professional Symfony and PHP developer with over five years of experience in software development.Khadija has extensive, robust problem-solving skills and proven experience creating and designing web applications in a test-driven environment.
+                                p.popup-text  Experienced in all five stages of the web development process, including information gathering, planning, design, development, testing, delivery, and maintenance.
+                                p.popup-text  Has profound experience in Shopware 5 and 6, grounded on solid skills in Symfony and Vue.js frameworks.
+                            .popup-scills 
+                                .main-scills
+                                    h4 Main expertise
+                                    ul.scills-items
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/php.png", alt="")
+                                                p.skils-item__name PHP
+                                            p.skils-item__experience 5 year
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/symphony.png", alt="")
+                                                p.skils-item__name Symphony
+                                            p.skils-item__experience 4 year
+                                .other-scills
+                                    h4 Other skills
+                                    ul.scills-items
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/sql.png", alt="")
+                                                p.skils-item__name SQL
+                                            p.skils-item__experience 3 year
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/vue.png", alt="")
+                                                p.skils-item__name Vue.js
+                                            p.skils-item__experience 3 year
+                                        li.scills-item.flex
+                                            .flex
+                                                img.skils-item__logo(src="img/zend.png", alt="")
+                                                p.skils-item__name Zend
+                                            p.skils-item__experience 2 year
+                        .popup-employment
+                            h2.popup-title Employment 
+                            .employment-container
+                                span
+                                .scroll
+                                    .employment-item
+                                        h3.employment-position Senior Web developer
+                                        h4.sub-title.employment-experience BLMEDiA GmbH - 11 months
+                                        ul 
+                                            li • Develop easy-to-manage and configurable Shopware plugins, and build additional functions for Shopware platform projects to address specific business needs.
+                                            li • Fully migrate existing Shopware 5 plugins to a brand new Shopware 6 system.
+                                        .tehnologies.flex 
+                                            h4.sub-title Technologies:
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/php.png", alt="")
+                                                p.skils-item__name PHP
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/symphony.png", alt="")
+                                                p.skils-item__name Symphony
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/zend.png", alt="")
+                                                p.skils-item__name Zend
+                                    .employment-item
+                                        h3.employment-position Senior Web designer
+                                        h4.sub-title.employment-experience Spread Content - Choueiri Group - 3 years 11 months
+                                        ul 
+                                            li Roles and responsibilities:
+                                            li • Actively contributed to creating a powerful content management system (CMS) to serve as an interface for clients using the Symfony framework.
+                                            li • Launched Related engine microservice returns related articles.
+                                            li • Achieved a reusable code structure with CMS that supports multiple projects.
+                                            li • Set up an API token authentication system using Symfony Custom Authentication System
+                                            li • Integrated Redis database to create quick access to any needed configuration for the web app.
+                                            li • Helped design an extensive graph database (Neo4j to store the live matches score results, teams, players, and stadium details for the Eurosport Arabia website.
+                                            li • Integrated Webpack Encore for managing the front-end assets and minifving the CSS and laveScrint files
+                                        .tehnologies.flex 
+                                            h4.sub-title Technologies:
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/php.png", alt="")
+                                                p.skils-item__name PHP
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/symphony.png", alt="")
+                                                p.skils-item__name Symphony
+                                            .flex.tehnologies-item
+                                                img.skils-item__logo(src="img/zend.png", alt="")
+                                                p.skils-item__name Zend
         include components/footer
-        //- .success-message Your message was successfully sent!
 script(src="js/scripts.js") 

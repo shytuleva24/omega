@@ -1,85 +1,160 @@
 @import components/mixin
-
-.candidat
+.candidats
     padding-top: 150rem
-    padding-bottom: 50rem
-.candidat-container
-    padding-bottom: 15rem
-    gap: 30rem
-    justify-content: space-between
-    flex-direction: column
-    align-items: center
-    +media(640)
-        align-items: flex-start
-        flex-direction: row
-.candidat-about
-    +media(640)
-        width: 50%
-
-.candidate-photo_container
-    width: 60%
-    padding: 45rem
-    border-radius: 5rem
-    background-color: #f3f3f3
-    order: -1
-    +media(640)
-        width: 40%
-        order: 0
-
-.candidate-photo
-    border-radius: 5rem
-    background-color: #cd7933
-    
-
-.candidate-name
-    font-size: 36rem
+.candidats-title
+    font-size: 50rem
     letter-spacing: 2rem
     font-weight: 700
     text-align: center
-    +media(640)
+.candidats-container
+    padding: 35rem 0 50rem
+    flex-wrap: wrap
+    gap: 30rem
+    justify-content: center
+.candidat-item
+    flex-direction: column
+    width: 90%
+    padding: 20rem
+    position: relative
+    max-width: 600rem
+    background-color: #f3f3f3
+    gap: 20rem
+    align-items: center
+    justify-content: space-between
+    border-radius: 20rem
+    +media(747)
+        flex-direction: row
+    +media(480)
+        width: 48%
+    .popup-link
+        border-radius: 20rem
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        transition: $transition
+        &:hover
+            box-shadow: 13px 7px 21px -6px rgba(0,0,0,.15)
+.candidat-photo
+    height: 100%
+    border-radius: 5rem
+    background-color: #cd7933  
+    img
+        border-radius: 5rem
+        object-fit: cover
+        height: 100%
+        width: 100%       
+.candidats-item__description
+    width: 100%
+.candidat-item__title
+    text-align: center
+    padding-bottom: 10rem
+    font-size: 30rem
+    font-weight: 700
+    +media(747)
+        text-align: left
+.candidat-item__sub-title
+    text-align: center
+    padding-bottom: 15rem
+    font-size: 18rem
+    font-weight: 600
+    +media(747)
+        text-align: left
+.candidat-item__scills
+    padding-bottom: 20rem
+    gap: 5rem
+    justify-content: center
+    flex-wrap: wrap
+    +media(747)
+        padding-bottom: 40rem
+        justify-content: flex-start
         text-align: left
 
-.candidate-direction
-    padding: 15rem 0 35rem
+.skills-item
+    min-width: 80rem
+    padding: 6rem 12rem
     text-align: center
-    font-size: 24rem
+    border-radius: 15rem
+    background-color: $colorAccent
+    color: #fff
+.candidat-item__about
+    font-size: 14rem
+.candidat-photo
+    width: 100%
+.popup-card
+    .popup_content
+        max-width: 94%
+        margin: 0 auto
+        background-color: #fff
+        border-radius: 20rem
+        +media(1260)
+            max-width: 1240rem
+.popup-decription
+    width: 100%
+    // display: none
+    // width: 35%
+    font-size: 14rem
+    +media(494)
+        order: 2
+        // width: 45%
+    +media(886)
+        order: 0
+        width: 45%
+
+.popup-about
+    // flex-direction: column
+    gap: 25rem
+    padding-bottom: 10rem
+    justify-content: space-between
+    flex-wrap: wrap
+    +media(886)
+        flex-wrap: nowrap
+
+.popup-title
+    padding-bottom: 5rem
+    font-size: 40rem
+    font-weight: 700
+.popup-sub
+    padding-bottom: 20rem
+    font-size: 26rem
     color: $colorAccent
     font-weight: 600
-    +media(640)
-        text-align: left
-.candidate-description
-    margin-bottom: 30rem
-    p
-        font-size: 16rem
-        padding-bottom: 15rem
-.candidate-skills
-    padding: 35rem
-    text-align: center
-    background-color: #f3f3f3
-    border-radius: 5rem
-.scills-container
-    flex-direction: column
-    gap: 50rem
-    +media(450)
-        flex-direction: row
-        
+.popup-text
+    padding-bottom: 5rem
+.popup-photo
+    width: 100%
+    +media(494)
+        width: 35%
+    +media(886)
+        width: 30%
 
+    img
+        border-radius: 5rem
+        object-fit: cover
+        height: 100%
+        width: 100%      
+.skils-item__experience
+    font-size: 13rem 
+.popup-scills 
+    width: 100%
+    +media(494)
+        width: 60%
+    +media(886)
+        width: 30%
 .main-scills,
 .other-scills
-    width: 100%
     h4
         font-size: 20rem
         font-weight: 700
-    +media(450)
-        width: 50%
 
 .scills-items
-    padding-top: 25rem
+    padding-top: 10rem
 .scills-item
     margin-bottom: 10rem
     padding: 10rem 30rem
-    min-height: 60rem
-    background-color: #fff
+    min-height: 40rem
+    background-color: #f3f3f3
     border-radius: 25rem
     justify-content: space-between 
     align-items: center 
@@ -92,10 +167,9 @@
     font-size: 16rem
 .skils-item__logo
     margin-right: 10rem
-    max-width: 40rem
+    max-width: 25rem
 
 // employment
-
 .employment-title
     margin-bottom: 35rem
     font-size: 36rem
@@ -103,22 +177,49 @@
     font-weight: 700
 
 .employment-container 
-    margin: 0 auto
+    margin: 0 0 0 auto
+    padding: 0 15rem
     padding-left: 27px
     position: relative
     max-width: 715rem
-    &::before
-        content: ""
+    .scroll
+        height: 240rem
+        overflow-y: scroll
+        &::-webkit-scrollbar 
+            width: 7px 
+            border: 1px solid $colorAccent 
+        &::-webkit-scrollbar-track 
+            background-color: transparent
+        &::-webkit-scrollbar-thumb 
+            background-color: $colorAccent
+    span
         position: absolute
         width: 2px
-        height: calc(100% - 30rem)
-        left: 0
+        height: calc(100% - 15rem)
+        left: 6.5px
         bottom: 0
         background-color: $colorAccent
-
+    &::before,
+    &::after
+        content: ""
+        position: absolute
+    &::after
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        background-color: $colorAccent
+        left: 0
+        top: 10rem
+    &::before
+        bottom: 0
+        left: 0
+        width: 14px
+        height: 14px
+        border-right: 2px solid $colorAccent
+        border-bottom: 2px solid $colorAccent
+        transform: rotate(45deg)
 .employment-item
     margin-bottom: 60rem
-    font-size: 16rem
     &:last-child
         margin-bottom: 0
     li
@@ -129,16 +230,6 @@
     color: $colorAccent
     font-weight: 600
     position: relative
-    &::before
-        content: ""
-        position: absolute
-        left: -26px
-        top: 50%
-        width: 16px
-        height: 16px
-        background-color: $colorAccent
-        border-radius: 50%
-        transform: translate(-50%, -50%)
 .sub-title
     font-size: 18rem
     font-weight: 700
@@ -155,4 +246,4 @@
     border-radius: 25rem
     padding: 10rem 20rem
     align-items: center
-    min-height: 60rem
+    min-height: 40rem

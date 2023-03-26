@@ -14,7 +14,9 @@
         {name: "our services", isLink:'true', url: "index.html#services"},
         {name: "candidates", url: "candidates.html"}
     ]
+-
 mixin menu (items, myClass)
     for item in items 
         li 
             a(data-filter=item.filter data-link=item.isLink href=item.url class=myClass) #{item.name}
+
